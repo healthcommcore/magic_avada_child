@@ -1,0 +1,271 @@
+/*!
+Theme Name: MaGIC Avada child
+Description: HCC-produced Avada child theme for MaGIC website
+Author: Dave Rothfarb
+Author URI: http://www.healthcommcore.org
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+
+$page-border: #233985;
+$dk-blue: #253C83;
+
+$aglet: 'aglet-sans';
+$semi: 600;
+$reg: 400;
+
+// Homepage borders
+$home-clin-trials: #9855B4;
+$home-data-comm: #EB954A;
+$home-clin-res: #535DAB;
+$home-bio-res: #D74E78;
+
+
+// Landing page
+$landing-intro: #3558B7;
+$h1-landing-bkgrd: rgba(136,56,165,0.8);
+
+// Video
+$vid-bkgrd: #D9E3FF;
+$vid-color: #3558B7;
+$vid-link: #DE3470;
+
+// Global
+$content-border: #233985;
+
+.input-text:not(textarea) {
+    height: auto;
+}
+
+.fusion-header {
+    background-position: top right;
+}
+
+/**/
+.fusion-header-v4 {
+  .fusion-header {
+    padding-top: 0;
+    padding-bottom:0;
+  }
+}
+
+/** MAIN MENU **/
+.fusion-secondary-main-menu {
+    border-bottom-width: 8px !important;
+}
+.fusion-header-menu-align-center .fusion-main-menu > ul > li {
+}
+
+.fusion-header-menu-align-center .fusion-main-menu > ul > li > a {
+    padding: 0 12px;
+}
+
+.fusion-main-menu > ul > li > a, 
+.fusion-vertical-menu-widget ul.menu li a, 
+.side-nav li a {
+    text-transform: uppercase;
+}
+
+/** HOME **/
+
+.home #content .page {
+    width: 100%;
+}
+
+.post-content .home-hero-headline h1, 
+.title .home-hero-headline h1 {
+    color: $dk-blue;
+    border-bottom: $dk-blue 5px solid;
+    text-transform: uppercase;
+}
+
+/* content boxes */
+.home-research-areas .fusion-content-boxes.content-boxes-clean-horizontal .col {
+    padding-top: 165px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.home-research-areas .fusion-content-boxes.content-boxes-clean-horizontal .content-box-column {
+    border: none;
+    margin: 0 1%;
+    background-position: center;
+    background-size: cover;
+    border-bottom-width: 31px;
+    border-bottom-style: solid;
+    text-align: right;
+}
+
+.home-research-areas .fusion-content-boxes.content-boxes-clean-horizontal .content-box-column a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .fusion-content-boxes.content-boxes-clean-horizontal .content-box-column.col-lg-3,
+.home .fusion-content-boxes.content-boxes-clean-horizontal .content-box-column.col-md-3,
+.home .fusion-content-boxes.content-boxes-clean-horizontal .content-box-column.col-sm-3 {
+    width: 23%;
+}
+
+.fusion-content-boxes .fusion-column {
+}
+
+.home-research-areas .fusion-content-boxes.content-boxes-clean-horizontal .content-box-column:nth-of-type(1) {
+    background-image: url('/wp-content/uploads/2019/12/clinical_trials_bkgrd.png');
+    border-bottom-color: $home-clin-trials !important;
+}
+
+.home-research-areas .fusion-content-boxes.content-boxes-clean-horizontal .content-box-column:nth-of-type(2) {
+    background-image: url('/wp-content/uploads/2019/12/data_commons_bkgrd.png');
+    border-bottom-color: $home-data-comm !important;
+}
+
+.home-research-areas .fusion-content-boxes.content-boxes-clean-horizontal .content-box-column:nth-of-type(3) {
+    background-image: url('/wp-content/uploads/2019/12/clinical_research_bkgrd.png');
+    border-bottom-color: $home-clin-res !important;
+}
+
+.home-research-areas .fusion-content-boxes.content-boxes-clean-horizontal .content-box-column:nth-of-type(4) {
+    background-image: url('/wp-content/uploads/2019/12/biologic_research_bkgrd.png');
+    border-bottom-color: $home-bio-res !important;
+}
+
+
+.fusion-read-more::after {
+    display: none;
+}
+
+/** LANDING PAGES **/
+
+.landing-page-title-wrapper {
+  height: 192px;
+  background-image: url('images/page_title_bkgrd.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    display: inline-block;
+    margin-top: 2.3em;
+    margin-left: 14%;
+    background: $h1-landing-bkgrd;
+    color: #fff;
+    font-family: $aglet;
+    font-weight: $semi;
+    font-size: 1.8em;
+    padding: 0.18em 0.8em;
+  }
+}
+
+
+.landing-intro-text {
+    color: $landing-intro;
+    font-size: 1.3em;
+    line-height: 1.6em;
+}
+
+.fusion-page-title-bar .entry-title {
+    //padding: 0.15em 0.75em;
+    //margin: 1.5em 0 0 5.0em;
+}
+
+.landing h2 {
+    background: url('/wp-content/uploads/2020/01/h2_graphic.png') 0 50% no-repeat;
+}
+
+/* video */
+.video-caption {
+    background-color: $vid-bkgrd;
+    margin: 1.0em 0;
+    padding: 1.0em 1.8em;
+    color: $vid-color;
+    font-size: 0.8em;
+}
+
+.video-caption a {
+    color: $vid-link;
+    font-size: 120%;
+}
+
+/** GLOBAL **/
+.fusion-header {
+  background-position: right center !important;
+}
+
+body.has-sidebar {
+  #main {
+    padding-top: 50px;
+  }
+  #content {
+    width: 80%;
+    padding-left: 70px;
+    padding-top: 30px;
+    border-left: $content-border 2px solid;
+  }
+  .fusion-page-title-bar {
+    .fusion-page-title-captions {
+      margin-top: 3.3em;
+      margin-left: 14%;
+    }
+  }
+}
+
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #8838A5;
+    
+}
+
+#main .post-content .fusion-border-below-title h2 {
+    padding-left: 60px;
+    line-height: 2em;
+    color: #8838A5;
+    border-bottom: #8838A5 1px solid;
+    margin: 1.2em 0 0.9em !important;
+}
+
+#content .page {
+    width: 72%;
+    display: block;
+}
+
+/** FOOTER **/
+.footer-logo {
+    float: left;
+}
+
+.footer-menu-and-legal {
+    text-align: right;
+}
+
+.footer-menu-and-legal a {
+    text-decoration: underline;
+}
+
+.fusion-footer-widget-area .widget a:hover {
+    color: #8c8989;
+}
+
+.footer-menu-and-legal .footer-menu {
+    float: right;
+}
+.footer-menu-and-legal .footer-menu li {
+    float: left;
+    padding: 0 10px;
+    border-right: #8c8989 1px solid;
+}
+
+.footer-menu-and-legal .footer-menu li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.footer-menu-and-legal .footer-menu a {
+    font-size: 0.9em;
+}
+.footer-menu-and-legal .footer-legal {
+    font-size: 0.7em;
+}
