@@ -219,12 +219,14 @@ h2 {
     
 }
 
-#main .post-content .fusion-border-below-title h2 {
+body {
+  #main .post-content .fusion-border-below-title h2 {
     padding-left: 60px;
     line-height: 2em;
     color: #8838A5;
     border-bottom: #8838A5 1px solid;
     margin: 1.2em 0 0.9em !important;
+  }
 }
 
 #content .page {
