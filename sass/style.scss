@@ -221,12 +221,17 @@ $content-border: #233985;
   }
 }
 
-.light-blue-boxes,
 .light-blue-boxes {
   .content-box-column > .col {
     .content-container {
       background: $lt-blue;
     }
+  }
+}
+
+.light-blue-boxes {
+  .text-container {
+    background: $lt-blue;
   }
 }
 
