@@ -10,6 +10,7 @@ Text Domain:  Avada
 
 $page-border: #233985;
 $dk-blue: #253C83;
+$lt-blue: #D9E3FF;
 
 $aglet: 'aglet-sans';
 $semi: 600;
@@ -193,9 +194,32 @@ $content-border: #233985;
     font-size: 120%;
 }
 
+
 /** GLOBAL **/
 .fusion-header {
   background-position: right center !important;
+}
+
+.light-blue-boxes {
+  .content-box-column > .col {
+    display: flex;
+    .heading {
+      margin-top: 0 !important;
+    }
+    .content-container {
+      padding-left: 40px !important;
+      padding-right: 100px;
+      width: 600px;
+      height: 144px;
+      display: table;
+      background: $lt-blue;
+      margin-top: 30px;
+      h4 {
+        vertical-align: middle;
+        display: table-cell;
+      }
+    }
+  }
 }
 
 body.has-sidebar {
