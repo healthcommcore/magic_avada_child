@@ -73,6 +73,21 @@ $content-border: #233985;
     width: 100%;
 }
 
+.home {
+  .home-headline-subtext {
+    margin-top: 100px !important;
+  }
+  #homepage-textmodules {
+    .fusion-content-boxes.content-boxes-clean-horizontal .col {
+      padding: 20px 35px 20px 20px;
+      border-left: $dk-blue 2px solid;
+      .fusion-read-more {
+        margin-left: 0 !important;
+      }
+    }
+  }
+}
+
 .post-content .home-hero-headline h1, 
 .title .home-hero-headline h1 {
     color: $dk-blue;
@@ -163,14 +178,6 @@ $content-border: #233985;
     line-height: 1.6em;
 }
 
-.fusion-page-title-bar .entry-title {
-    //padding: 0.15em 0.75em;
-    //margin: 1.5em 0 0 5.0em;
-}
-
-.landing h2 {
-    background: url('/wp-content/uploads/2020/01/h2_graphic.png') 0 50% no-repeat;
-}
 
 /* video */
 .video-caption {
@@ -214,18 +221,18 @@ h1, h2 {
     text-transform: uppercase;
 }
 
-h2 {
-    color: #8838A5;
-    
-}
-
 body {
-  #main .post-content .fusion-border-below-title h2 {
-    padding-left: 60px;
-    line-height: 2em;
-    color: #8838A5;
-    border-bottom: #8838A5 1px solid;
-    margin: 1.2em 0 0.9em !important;
+  #main {
+    .post-content .fusion-border-below-title h2, h2 {
+      padding-left: 60px;
+      line-height: 2em;
+      color: #8838A5;
+      background: url('/wp-content/uploads/2020/01/h2_graphic.png') 0 50% no-repeat;
+    }
+    .post-content .fusion-border-below-title h2 {
+      border-bottom: #8838A5 1px solid;
+      margin: 1.2em 0 0.9em !important;
+    }
   }
 }
 
@@ -235,6 +242,7 @@ body {
 }
 
 /** FOOTER **/
+
 .footer-logo {
     float: left;
 }
@@ -257,7 +265,7 @@ body {
 .footer-menu-and-legal .footer-menu li {
     float: left;
     padding: 0 10px;
-    border-right: #8c8989 1px solid;
+    border-right: #fff 1px solid;
 }
 
 .footer-menu-and-legal .footer-menu li:last-child {
@@ -265,9 +273,10 @@ body {
     padding-right: 0;
 }
 
-.footer-menu-and-legal .footer-menu a {
-    font-size: 0.9em;
+.footer-menu a {
+  font-size: 0.8em;
 }
+
 .footer-menu-and-legal .footer-legal {
-    font-size: 0.7em;
+    font-size: 0.6em;
 }
