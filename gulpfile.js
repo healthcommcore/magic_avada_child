@@ -11,8 +11,8 @@ const
   sourcemaps = require('gulp-sourcemaps'),
   postcss = require('gulp-postcss'),
   cssnano = require('cssnano'),
-  autoprefixer = require('autoprefixer'),
-  browsersync = require('browser-sync').create()
+  autoprefixer = require('autoprefixer')
+  //browsersync = require('browser-sync').create()
 ;
 
 const clean = () => {
@@ -23,8 +23,8 @@ const clean = () => {
   .pipe(sass()).on('error', sass.logError)
   .pipe(postcss([autoprefixer(), cssnano()]))
   .pipe(sourcemaps.write('maps/'))
-  .pipe(gulp.dest(dir.build))
-  .pipe(browsersync.stream());
+  .pipe(gulp.dest(dir.build));
+  //.pipe(browsersync.stream());
 };
 
 const reload = () => {
@@ -32,10 +32,13 @@ const reload = () => {
 }
 
 const watch = () => {
+  /*
   browsersync.init({
     proxy: "magic.dr809.test"
   });
   gulp.watch(dir.src, clean).on('change', browsersync.reload);
+  */
+  gulp.watch(dir.src, clean);
 }
 
 const build = gulp.parallel(clean, watch);
