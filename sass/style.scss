@@ -11,6 +11,8 @@ Text Domain:  Avada
 $page-border: #233985;
 $dk-blue: #253C83;
 $lt-blue: #D9E3FF;
+$pink: #DE3470;
+$leader-txt-color: #3558B7;
 
 $aglet: 'aglet-sans';
 $semi: 600;
@@ -195,11 +197,7 @@ $content-border: #233985;
 }
 
 
-/** GLOBAL **/
-.fusion-header {
-  background-position: right center !important;
-}
-
+/** Staff list **/
 .timeline-align {
   .content-box-column > .col {
     display: flex;
@@ -252,6 +250,51 @@ $content-border: #233985;
   }
 }
 
+.leadership-layout {
+  .light-blue-boxes {
+    .text-container {
+      font-size: 0.8em;
+      color: $leader-txt-color;
+    }
+  }
+  h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.consortium-layout {
+  .light-blue-boxes {
+    .consortium-container {
+      padding: 12px 30px 10px;
+    }
+  }
+}
+
+.exec-layout {
+  .light-blue-boxes {
+    display: flex;
+    align-items: center;
+    .exec-container {
+      padding: 30px 70px 30px 30px;
+      margin-left: 20px
+    }
+  }
+  .exec-margin {
+    margin-bottom: 70px;
+  }
+}
+
+/** GLOBAL **/
+.fusion-header {
+  background-position: right center !important;
+}
+
+a:hover {
+  color: $pink !important;
+}
+
+
 body.has-sidebar {
   #main {
     padding-top: 50px;
@@ -283,7 +326,7 @@ body {
       color: #8838A5;
       background: url('/wp-content/uploads/2020/01/h2_graphic.png') 0 50% no-repeat;
     }
-    .post-content .fusion-border-below-title h2 {
+    .post-content .fusion-border-below-title h2 , h2{
       border-bottom: #8838A5 1px solid;
       margin: 1.2em 0 0.9em !important;
     }
@@ -305,32 +348,42 @@ body {
     text-align: right;
 }
 
-.footer-menu-and-legal a {
-    text-decoration: underline;
-}
 
-.fusion-footer-widget-area .widget a:hover {
+
+.fusion-footer-widget-area {
+  .widget a:hover {
     color: #8c8989;
+  }
+  .footer-menu-and-legal {
+    color: #fff;
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+  .footer-menu-and-legal .footer-menu {
+      float: right;
+  }
+  .footer-menu-and-legal .footer-menu li {
+      float: left;
+      padding: 0 10px;
+      border-right: #fff 1px solid;
+  }
+
+  .footer-menu-and-legal .footer-menu li:last-child {
+      border-right: none;
+      padding-right: 0;
+  }
+
+  .footer-menu a {
+    color: #fff;
+    font-size: 0.8em;
+    text-decoration: underline;
+  }
+
+  .footer-menu-and-legal .footer-legal {
+      font-size: 0.6em;
+  }
 }
 
-.footer-menu-and-legal .footer-menu {
-    float: right;
-}
-.footer-menu-and-legal .footer-menu li {
-    float: left;
-    padding: 0 10px;
-    border-right: #fff 1px solid;
-}
 
-.footer-menu-and-legal .footer-menu li:last-child {
-    border-right: none;
-    padding-right: 0;
-}
-
-.footer-menu a {
-  font-size: 0.8em;
-}
-
-.footer-menu-and-legal .footer-legal {
-    font-size: 0.6em;
-}
