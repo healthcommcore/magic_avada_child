@@ -334,12 +334,25 @@ body {
       border: none;
       margin: 0 0 10px 0 !important;
     }
+    .post-content .fusion-border-below-title.special-h2 h2 {
+      padding-left: 0;
+      background: none;
+      border: none;
+      margin: 0 !important;
+    }
+    .fusion-blog-shortcode .post {
+      margin-bottom: 0;
+    }
   }
 }
 
 #content .page {
     width: 72%;
     display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 /** FOOTER **/
@@ -390,4 +403,15 @@ body {
   }
 }
 
+/** RESPONSIVE **/
 
+@media (max-width: 1189px) {
+  header {
+    .fusion-header-v4 .fusion-main-menu > ul > li {
+      padding-right: 10px;
+      a {
+        font-size: 13px;
+      }
+    }
+  }
+}
