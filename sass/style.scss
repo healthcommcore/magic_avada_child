@@ -402,6 +402,15 @@ body {
   }
 }
 
+.input-text:not(textarea) {
+  height: auto !important;
+  color: #000;
+  border: none;
+  .timeline-graphic {
+    margin: 20px 0 30px;
+  }
+}
+
 .desktop-headline {
   .home-hero-headline h1 {
     margin-left: 25% !important;
