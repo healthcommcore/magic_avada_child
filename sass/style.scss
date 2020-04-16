@@ -510,11 +510,18 @@ body {
     //line-height: 1.3em !important;
   }
   .homepage-textmodules-bottom {
-    .col-sm-4 {
-      width: 100%;
+    .fusion-content-boxes.content-boxes-clean-horizontal .col {
+      min-height: auto !important;
     }
-    .col-md-4 {
-      float: none;
+    .fusion-columns-3{
+      .fusion-column.col-sm-4 {
+        width: 100% !important;
+      }
+    }
+    .fusion-columns-3 {
+      .fusion-column.col-md-4 {
+        float: none !important;
+      }
     }
   }
 
